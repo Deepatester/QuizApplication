@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7CCC8"
+    tools:context="com.example.deepa.quizapplication.finalpage"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ThankYou"
+        android:textSize="25sp"
+        android:layout_margin="25dp"
+        android:id="@+id/finalView"
+        />
+
+
+    <TextView
+        android:id="@+id/finalView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finalView"
+        android:layout_alignStart="@+id/finalView"
+        android:layout_below="@+id/finalView"
+        android:layout_marginTop="13dp"
+        android:text="@string/YourScore"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/finalView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/finalView"
+        android:layout_alignRight="@+id/finalView"
+        android:layout_alignTop="@+id/finalView1"
+        android:text="@string/O"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/finalView1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:text="@string/Calculate"
+        android:onClick="calculateScore"/>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:text="@string/Share" />
+
+</RelativeLayout>
